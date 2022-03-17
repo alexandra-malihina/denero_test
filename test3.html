@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+	<script>
+		var check_input = true;
+		$(document).keydown(function (event) {
+
+			let keys = {
+				37 : 'left arrow',
+				38 : 'up arrow',
+				39 : 'right arrow',
+				40 : 'down arrow',
+			};
+			let key = (event.keyCode ? event.keyCode : event.which);
+
+			if (keys[key])
+			{
+				alert(keys[key]);
+			}
+		});
+
+	</script>
+</body>
+
+</html>
